@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="books.css" />
+    <title>Notes</title>
+    <style>
+      .rotate {
+        width: fit-content;
+        height: fit-content;
+        display: inline-block;
+        position: absolute;
+      }
+      .rotate:hover img,
+      .rotate:focus img {
+        transform: rotate(3deg);
+      }
+      .rotate:hover .text,
+      a:focus .text {
+        opacity: 1;
+      }
+      .rotate:hover img {
+        content: url("../../images/boom.png"); /* replace with your new image URL */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="front-cover">
+      <h1 class="title">Notes</h1>
+      <p class="author">By Ꭿᖇi</p>
+      <a
+        href="pages/page1.html"
+        class="rotate"
+        style="top: 25.5vw; left: 43.125vw"
+      >
+        <img
+          class="rotate"
+          src="../../images/pan.png"
+          style="width: 13.5vw"
+          alt=""
+        />
+      </a>
+    </div>
+  </body>
+</html>
